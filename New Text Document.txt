@@ -1,0 +1,19 @@
+	//____________________Confuguration for TYPESCRIPT and NODE_________________________________________
+
+	npm i --save @types/node typescript
+
+	npm i --save ts-node // To execute a typescript file  "scripts": { "start": "ts-node src/index.ts" } // slow and in production the typescript is converted to js before executing it
+
+	"watch" : "tsc -w" this script compile typescript into js in realtime inside a dist folder so instead of executing a ts file we execute a js file since it s faster
+
+	npx tsconfig.json // to add a configuration file for typescript or doit from scratch
+
+
+//
+microrm help us interact with the database ==> create table... 
+	
+npm i --save @mikro-orm/cli @mikro-orm/core @mikro-orm/migrations  pg
+
+
+// Migration to create the schema that we defined in our code into the database 
+npx mikro-orm migration:create
